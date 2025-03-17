@@ -1,0 +1,23 @@
+[
+    {
+        "titulo": "Google Presenta su Nueva Herramienta para Mejorar la Velocidad de las Páginas Web",
+        "fecha": "2025-03-11",
+        "resumen": "Google ha lanzado una nueva herramienta llamada PageSpeed Boost, diseñada para ayudar a los desarrolladores a optimizar la velocidad de carga de sus páginas web. Esta herramienta analiza el código y recomienda mejoras en tiempo real, permitiendo reducir el tiempo de carga hasta un 35% más rápido.",
+        "importancia": "Una carga rápida mejora la experiencia del usuario y aumenta la visibilidad en SEO. Google ha confirmado que las páginas más rápidas tienen mejores posiciones en los resultados de búsqueda.",
+        "enlace": "https://developers.google.com/"
+    },
+    {
+        "titulo": "Tendencias en Diseño Web para 2025: ¿Qué Está de Moda?",
+        "fecha": "2025-03-10",
+        "resumen": "El diseño web sigue evolucionando, y para 2025 estas son las principales tendencias que están dominando la industria: Modo Oscuro Mejorado, Diseños Minimalistas, Tipografía Gigante y mayor Interactividad.",
+        "importancia": "Si tienes un sitio web, asegúrate de actualizar tu diseño para que se mantenga atractivo y moderno.",
+        "enlace": "https://www.awwwards.com/"
+    },
+    {
+        "titulo": "El 70% de los Usuarios Abandonan un Sitio Web en 3 Segundos: Cómo Evitarlo",
+        "fecha": "2025-03-08",
+        "resumen": "Un estudio reciente ha revelado que el 70% de los usuarios abandonan una página web si tarda más de 3 segundos en cargar, afectando directamente las ventas y la tasa de conversión.",
+        "importancia": "Para evitarlo, optimiza imágenes, reduce scripts y plugins innecesarios, y elige un hosting rápido.",
+        "enlace": "https://web.dev/"
+    }
+]

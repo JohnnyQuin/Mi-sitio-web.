@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto | TechNova Solutions</title>
+    <link rel="stylesheet" href="../styles.css"> 
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../imagenes/imagenes/logo.png" alt="Logo de TechNova Solutions">
+            </a>
+        </div>
+        <ul>
+            <li><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li><a href="../viems/noticias.html" class="nav-link">Noticias</a></li>
+            <li><a href="../viems/galeria.html" class="nav-link">Galería</a></li>
+            <li><a href="../viems/presupuesto.html" class="nav-link activo">Presupuesto</a></li>
+            <li><a href="../viems/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>        
+    </nav>    
+    <header>
+        <h1>Solicitud de Presupuesto</h1>
+    </header>
+<div class="container">
+    <section id="presupuesto">
+        <h2>Solicita tu Presupuesto</h2>
+        <p>Completa el formulario y obtén un presupuesto detallado en tiempo real.</p>
+        <form id="formPresupuesto">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required maxlength="15" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,15}">
+            </div>
+            
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Tus Apellidos" required maxlength="40" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,40}">
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Ej. 123456789" required maxlength="9" pattern="[0-9]{9}">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+            </div>
+                        <div class="form-group">
+                <label for="producto">Selecciona un Producto:</label>
+                <select id="producto" name="producto">
+                    <option value="200">Diseño Web - $200</option>
+                    <option value="300">Aplicación Móvil - $300</option>
+                    <option value="150">Optimización SEO - $150</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="plazo">Plazo de Entrega (Días):</label>
+                <input type="number" id="plazo" name="plazo" min="1" max="365" required>
+                <small>Descuento del 5% si el plazo es mayor a 30 días.</small>
+            </div>
+            <div class="form-group">
+                <label>Extras Disponibles:</label>
+                <div class="extras">
+                    <label><input type="checkbox" class="extra" value="50"> Soporte Técnico (+$50)</label>
+                    <label><input type="checkbox" class="extra" value="75"> Hosting Web (+$75)</label>
+                    <label><input type="checkbox" class="extra" value="100"> SEO Avanzado (+$100)</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h3>Presupuesto Total: <span id="presupuestoTotal">$0</span></h3>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="condiciones"> Acepto las condiciones de privacidad.
+                </label>
+            </div>
+            <div class="botones">
+                <button type="submit">Enviar Presupuesto</button>
+                <button type="reset">Restablecer</button>
+            </div>
+        </form>
+    </section>
+</div>
+<footer>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Dirección: Calle Gran Vía, 45, 28013, Madrid, España</p>
+        <p><a href="../aviso-legal.html">Aviso Legal</a></p>
+    
+</footer>
+    <script src="../js/validacion.js"></script>
+</body>
+</html>

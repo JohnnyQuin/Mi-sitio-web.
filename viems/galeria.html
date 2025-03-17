@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | TechNova Solutions</title>
+    <link rel="stylesheet" href="../styles.css"> 
+    <link rel="stylesheet" href="../css/galeria.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../imagenes/imagenes/logo.png" alt="Logo de TechNova Solutions">
+            </a>
+        </div>
+        <ul>
+            <li><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li><a href="../viems/noticias.html" class="nav-link">Noticias</a></li>
+            <li><a href="galeria.html" class="nav-link activo">Galería</a></li>
+            <li><a href="../viems/presupuesto.html" class="nav-link">Presupuesto</a></li>
+            <li><a href="../viems/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>    
+    <header>
+        <h1>Galería</h1>
+        <p>Explora nuestra colección de imágenes</p>
+    </header>
+    <section id="galeria">
+        <h2>Galería de Informática</h2>
+        <div id="galeria-container">
+        </div>
+    </section>
+    <script src="../js/galeria.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".nav-link");
+            links.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add("activo");
+                }
+            });
+        });
+    </script>
+<footer>
+    <div class="redes-sociales">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Calle Gran Vía, 45, 28013, Madrid, España</p>
+    <p><a href="../aviso-legal.html">Aviso Legal</a></p>
+</footer>
+</body>
+</html>

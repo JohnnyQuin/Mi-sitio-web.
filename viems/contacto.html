@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | TechNova Solutions</title>
+    <link rel="stylesheet" href="../styles.css"> 
+    <link rel="stylesheet" href="../css/contacto.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../imagenes/imagenes/logo.png" alt="Logo TechNova Solutions">
+        </a>
+    </div>
+    <ul>
+        <li><a href="../index.html" class="nav-link">Inicio</a></li>
+        <li><a href="../viems/noticias.html" class="nav-link">Noticias</a></li>
+        <li><a href="../viems/galeria.html" class="nav-link">Galería</a></li>
+        <li><a href="../viems/presupuesto.html" class="nav-link">Presupuesto</a></li>
+        <li><a href="../viems/contacto.html" class="nav-link">Contacto</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Contacto</h1>
+    <p>Encuentra nuestra ubicación fácilmente</p>
+</header>
+<section id="contacto-info">
+    <h2>Información de contacto</h2>
+    <p><strong>Dirección:</strong> Calle Gran Vía, 45, 28013, Madrid, España</p>
+    <p><strong>Teléfono:</strong> +34 910 123 456</p>
+    <p><strong>Email:</strong> contacto.technova@gmail.com</p>
+</section>
+<section id="mapa-container">
+    <h2>Nuestra ubicación</h2>
+    <div id="map" style="width: 70%; height: 500px;"></div>
+</section>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    var map = L.map('map').setView([40.4205, -3.7076], 15); 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([40.4205, -3.7076]).addTo(map)
+        .bindPopup('TechNova Solutions - Calle Gran Vía, 45, Madrid')
+        .openPopup();
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".nav-link");
+        links.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add("activo");
+            }
+        });
+    });
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+<footer>
+    <div class="redes-sociales">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Calle Gran Vía, 45, 28013, Madrid, España</p>
+    <p><a href="../aviso-legal.html">Aviso Legal</a></p>
+</footer>
+</body>
+</html>

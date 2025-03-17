@@ -1,0 +1,145 @@
+#presupuesto {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.95));
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 850px;
+    margin: 80px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+#presupuesto:hover {
+    transform: translateY(-10px);
+}
+
+#presupuesto h2 {
+    color: #D4AF37;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+#presupuesto p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #D4AF37;
+    outline: none;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+#presupuestoTotal {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D4AF37;
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 14px;
+    background-color: #D4AF37;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #B89D2C;
+    transform: translateY(-3px);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 4px solid #D4AF37;
+    box-shadow: 0px -6px 14px rgba(0, 0, 0, 0.2);
+}
+
+footer .redes-sociales {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .redes-sociales a {
+    font-size: 24px;
+    color: #D4AF37;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+footer .redes-sociales a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+footer p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+footer a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    #presupuesto {
+        margin: 50px auto;
+        padding: 30px 15px;
+    }
+    .botones {
+        flex-direction: column;
+        gap: 15px;
+    }
+    button {
+        width: 100%;
+    }
+}
